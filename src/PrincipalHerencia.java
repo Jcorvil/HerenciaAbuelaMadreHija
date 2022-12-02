@@ -1,16 +1,14 @@
 public class PrincipalHerencia {
     public static void  main(String[]args){
-        C objeto = new C("aaa");
-        objeto.imprimeC1();
+        Abuela persona1 = new Abuela();
+        System.out.println("La abuela se llama " + persona1.nombre + " " + persona1.apellido1);
+        System.out.println(persona1.edad);
 
-      /*  System.out.println(objeto.c1);
-        System.out.println(objeto.c3);*/
+        Madre persona2 = new Madre();
+        System.out.println(persona2.nombre + " " + persona2.apellido1);
+        System.out.println(persona2.estadoCivil);
 
-       /* C objeto2 = new C();
-        System.out.println(objeto2.c1);
-
-        C objeto3 = new C();
-        System.out.println(objeto.c1);
-        System.out.println(objeto2.c1);*/
+        Hija persona3 = new Hija();
+        System.out.println(persona3.nombre + " " + persona3.apellido1 + " " + persona3.apellido2 + " " + persona3.edad + " " + persona3.estadoCivil);
     }
 }
