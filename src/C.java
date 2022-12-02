@@ -1,0 +1,7 @@
+public class C extends B{
+    String c1 = "rosa";
+
+    C(String c1) {
+        super(c1);
+    }
+}
